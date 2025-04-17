@@ -40,7 +40,7 @@ if input_pincode:
             if row['District'] == input_district and row['State'] == input_state:
                 return "INTRA CITY"
             elif row['State'] == input_state:
-                return "REGIONAL"
+                return "INTRA STATE"
             elif row['District'] in metro_cities and input_district in metro_cities: 
                 return "METRO TO METRO"
             elif row['State'] in special_regions:
